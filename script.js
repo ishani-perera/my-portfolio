@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             draw(){
                 ctx.beginPath(); ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
-                ctx.fillStyle = `rgba(255,87,34,${this.alpha})`;
-                ctx.shadowBlur = 4; ctx.shadowColor = 'rgba(255,87,34,.25)';
+                ctx.fillStyle = `rgba(234,88,12,${this.alpha})`;
+                ctx.shadowBlur = 4; ctx.shadowColor = 'rgba(234,88,12,.25)';
                 ctx.fill();
             }
             update(){
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         ctx.beginPath();
                         ctx.moveTo(particles[i].x, particles[i].y);
                         ctx.lineTo(particles[j].x, particles[j].y);
-                        ctx.strokeStyle = `rgba(255,87,34,${.06 * (1 - dist/100)})`;
+                        ctx.strokeStyle = `rgba(234,88,12,${.06 * (1 - dist/100)})`;
                         ctx.lineWidth = .4; ctx.stroke();
                     }
                 }
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* ── Typing Effect ── */
     const typed = document.getElementById('typed');
-    const words = ['Frontend Developer', 'UI/UX Enthusiast', 'Problem Solver', 'CS Undergraduate'];
+    const words = ['Frontend Developer', 'Software Engineer', 'Problem Solver', 'CS Undergraduate'];
     let wi = 0, ci = 0, deleting = false;
     function type() {
         const word = words[wi];

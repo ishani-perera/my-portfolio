@@ -131,33 +131,48 @@ document.addEventListener('DOMContentLoaded', () => {
         statsObs.observe(statsEl);
     }
 
-    /* ── Circle Progress Animation ── */
-    const CIRCUMFERENCE = 2 * Math.PI * 50;
-    function animateCircle(fill, pctEl, targetPct) {
-        fill.style.strokeDashoffset = CIRCUMFERENCE - (targetPct / 100) * CIRCUMFERENCE;
-        let current = 0;
-        const step  = targetPct / 60;
-        const timer = setInterval(() => {
-            current += step;
-            if (current >= targetPct) { current = targetPct; clearInterval(timer); }
-            pctEl.textContent = Math.floor(current) + '%';
-        }, 16);
-    }
-    const langCircles = document.querySelector('.lang-circles');
-    if (langCircles) {
-        const circleObs = new IntersectionObserver(entries => {
+    /* ── Technical Skills Animation Logic ── */
+    const skillsSection = document.querySelector('#skills');
+    if (skillsSection) {
+        const skillWraps = document.querySelectorAll('.skill-circle-wrap');
+        
+        const animateSkill = (wrap) => {
+            const progress = wrap.querySelector('.progress');
+            const pctDisplay = wrap.querySelector('.pct');
+            const targetPct = wrap.dataset.pct;
+            const circumference = 2 * Math.PI * 45; // radius 45
+            
+            // Set SVG stroke
+            progress.style.strokeDasharray = circumference;
+            const offset = circumference - (targetPct / 100) * circumference;
+            progress.style.strokeDashoffset = offset;
+
+            // Animate Number
+            let current = 0;
+            const duration = 2000;
+            const step = targetPct / (duration / 16);
+            
+            const counter = setInterval(() => {
+                current += step;
+                if (current >= targetPct) {
+                    pctDisplay.textContent = targetPct + '%';
+                    clearInterval(counter);
+                } else {
+                    pctDisplay.textContent = Math.floor(current) + '%';
+                }
+            }, 16);
+        };
+
+        const skillsObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.querySelectorAll('.circle-fill').forEach(fill => {
-                        const pct   = parseInt(fill.dataset.pct);
-                        const pctEl = fill.closest('.circle-wrap').querySelector('.circle-pct');
-                        animateCircle(fill, pctEl, pct);
-                    });
-                    circleObs.unobserve(entry.target);
+                    skillWraps.forEach(wrap => animateSkill(wrap));
+                    skillsObserver.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.25 });
-        circleObs.observe(langCircles);
+        }, { threshold: 0.3 });
+
+        skillsObserver.observe(skillsSection);
     }
 
     /* ── Project image fallback ── */
@@ -211,7 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /* ── 3D Tilt Hover Effect ── */
-    const tiltElements = document.querySelectorAll('.project-card, .skill-box, .profile-3d-wrap');
+    const tiltElements = document.querySelectorAll('.project-card, .category-card, .profile-3d-wrap');
     tiltElements.forEach(el => {
         el.addEventListener('mousemove', (e) => {
             const rect = el.getBoundingClientRect();

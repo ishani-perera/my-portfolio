@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* ── Typing Effect ── */
     const typed = document.getElementById('typed');
-    const words = ['Frontend Developer', 'Software Engineer', 'Problem Solver', 'CS Undergraduate'];
+    const words = ['Frontend Developer', 'Backend Developer', 'Problem Solver'];
     let wi = 0, ci = 0, deleting = false;
     function type() {
         const word = words[wi];

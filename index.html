@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishani Perera | Full-Stack Developer</title>
+    <meta name="description" content="Portfolio of Ishani Perera, Full-Stack Developer.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ─── Navigation ─── -->
+    <header id="header">
+        <nav class="navbar">
+            <a href="#home" class="logo">Ishani<span>.</span></a>
+            <ul class="nav-links" id="navMenu">
+                <li><a href="#home"      class="nav-link active">Home</a></li>
+                <li><a href="#about"     class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills"    class="nav-link">Skills</a></li>
+                <li><a href="#projects"  class="nav-link">Projects</a></li>
+                <li><a href="#contact"   class="nav-link btn-cta">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ─── Hero ─── -->
+        <section id="home" class="hero">
+            <canvas id="particles-canvas"></canvas>
+
+            <!-- Blobs -->
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+
+            <div class="hero-content">
+                <p class="greeting reveal-up">👋 Hello, I'm</p>
+                <h1 class="name reveal-up" style="--d:.1s">Ishani Perera</h1>
+                <p class="hero-subtitle reveal-up" style="--d:.15s">Full-Stack Developer</p>
+                <h2 class="role reveal-up" style="--d:.2s">
+                    <span class="typed-wrapper"><span id="typed"></span><span class="cursor-blink">|</span></span>
+                </h2>
+                <p class="bio reveal-up" style="--d:.3s">
+                    BSc Computer Science undergraduate at the University of Westminster, passionate about bridging design and functionality through responsive, user-centric web interfaces.
+                </p>
+                <div class="hero-cta reveal-up" style="--d:.4s">
+                    <a href="#projects" class="btn btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+                    <a href="mailto:udayanganiishaniperera@gmail.com" class="btn btn-ghost">Hire Me</a>
+                </div>
+                <div class="social-bar reveal-up" style="--d:.5s">
+                    <a href="https://github.com/ishani-perera" target="_blank" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ishaniperera" target="_blank" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="tel:+94741024640" class="social-icon" title="Phone"><i class="fas fa-phone"></i></a>
+                    <a href="mailto:udayanganiishaniperera@gmail.com" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <!-- Profile picture - Modern Card -->
+            <div class="hero-image reveal-right">
+                <div class="profile-3d-wrap animated-glow">
+                    <div class="profile-3d-frame glass">
+                        <img src="assets/profile.png" alt="Ishani Perera">
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+                <p>Scroll down</p>
+            </div>
+        </section>
+
+        <!-- ─── About ─── -->
+        <section id="about" class="about">
+            <div class="section-title reveal">
+                <h2>About <span class="gradient-text">Me</span></h2>
+                <div class="line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal-left">
+                    <p>I am a dedicated Computer Science undergraduate at the University of Westminster with a specialised focus on Full-Stack Development. Passionate about bridging the gap between design and functionality, crafting responsive, user-centric web interfaces using HTML5, CSS3, and JavaScript.</p>
+                    <p>Eager to transition my academic knowledge into professional practice, my goal is to contribute to innovative real-world projects while building a robust foundation for a successful career in the IT industry.</p>
+                    <div class="info-chips">
+                        <div class="info-chip"><i class="fas fa-map-marker-alt"></i> Nadagamuva, Kotugoda</div>
+                        <div class="info-chip"><i class="fas fa-phone"></i> +94 74 102 4640</div>
+                        <div class="info-chip"><i class="fas fa-language"></i> English &amp; Sinhala</div>
+                        <div class="info-chip"><i class="fas fa-graduation-cap"></i> CS Undergraduate</div>
+                    </div>
+                </div>
+                <div class="about-stats reveal-right">
+                    <div class="stat-card glass"><span class="stat-num" data-target="5">0</span>+<span>Projects Completed</span></div>
+                    <div class="stat-card glass"><span class="stat-num" data-target="4">0</span>+<span>Tech Stacks</span></div>
+                    <div class="stat-card glass"><span class="stat-num" data-target="3">0</span>+<span>Hackathons</span></div>
+                    <div class="stat-card glass"><span class="stat-num" data-target="2026">0</span><span>Currently Active</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── Education ─── -->
+        <section id="education" class="education">
+            <div class="section-title reveal">
+                <h2>My <span class="gradient-text">Education</span></h2>
+                <div class="line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass">
+                        <span class="timeline-year">2024 – Present</span>
+                        <h3>BSc (Hons) Computer Science</h3>
+                        <p class="inst"><i class="fas fa-university"></i> University of Westminster (via IIT)</p>
+                        <p>Specialising in Full-Stack Development, algorithms, data structures, and software engineering principles.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-left" style="--d:.15s">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass">
+                        <span class="timeline-year">2020 – 2023</span>
+                        <h3>G.C.E. Advanced Level – Physical Science</h3>
+                        <p class="inst"><i class="fas fa-school"></i> Galahitiyawa Central College</p>
+                        <p>Studied Physics, Chemistry and Combined Mathematics with distinction.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── Skills ─── -->
+        <section id="skills" class="skills-section">
+            <div class="section-title reveal">
+                <h2>Technical <span class="gradient-text">Skills</span></h2>
+                <div class="line"></div>
+            </div>
+
+            <h3 class="skills-sub-title reveal"><i class="fas fa-code"></i> Language Proficiency</h3>
+            <div class="lang-circles reveal-up">
+                <svg style="width:0;height:0;position:absolute"><defs>
+                    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#f97316"/>
+                        <stop offset="100%" stop-color="#fb923c"/>
+                    </linearGradient>
+                </defs></svg>
+
+                <div class="lang-circle-item"><div class="circle-wrap">
+                    <svg class="circle-svg" viewBox="0 0 120 120"><circle class="circle-bg" cx="60" cy="60" r="50"/><circle class="circle-fill" cx="60" cy="60" r="50" data-pct="90"/></svg>
+                    <div class="circle-label"><span class="circle-pct">0%</span><span class="circle-lang">HTML5</span></div>
+                </div></div>
+
+                <div class="lang-circle-item"><div class="circle-wrap">
+                    <svg class="circle-svg" viewBox="0 0 120 120"><circle class="circle-bg" cx="60" cy="60" r="50"/><circle class="circle-fill" cx="60" cy="60" r="50" data-pct="87"/></svg>
+                    <div class="circle-label"><span class="circle-pct">0%</span><span class="circle-lang">JavaScript</span></div>
+                </div></div>
+
+                <div class="lang-circle-item"><div class="circle-wrap">
+                    <svg class="circle-svg" viewBox="0 0 120 120"><circle class="circle-bg" cx="60" cy="60" r="50"/><circle class="circle-fill" cx="60" cy="60" r="50" data-pct="85"/></svg>
+                    <div class="circle-label"><span class="circle-pct">0%</span><span class="circle-lang">CSS3</span></div>
+                </div></div>
+
+                <div class="lang-circle-item"><div class="circle-wrap">
+                    <svg class="circle-svg" viewBox="0 0 120 120"><circle class="circle-bg" cx="60" cy="60" r="50"/><circle class="circle-fill" cx="60" cy="60" r="50" data-pct="82"/></svg>
+                    <div class="circle-label"><span class="circle-pct">0%</span><span class="circle-lang">Java</span></div>
+                </div></div>
+
+                <div class="lang-circle-item"><div class="circle-wrap">
+                    <svg class="circle-svg" viewBox="0 0 120 120"><circle class="circle-bg" cx="60" cy="60" r="50"/><circle class="circle-fill" cx="60" cy="60" r="50" data-pct="75"/></svg>
+                    <div class="circle-label"><span class="circle-pct">0%</span><span class="circle-lang">Python</span></div>
+                </div></div>
+
+                <div class="lang-circle-item"><div class="circle-wrap">
+                    <svg class="circle-svg" viewBox="0 0 120 120"><circle class="circle-bg" cx="60" cy="60" r="50"/><circle class="circle-fill" cx="60" cy="60" r="50" data-pct="65"/></svg>
+                    <div class="circle-label"><span class="circle-pct">0%</span><span class="circle-lang">Flutter</span></div>
+                </div></div>
+
+                <div class="lang-circle-item"><div class="circle-wrap">
+                    <svg class="circle-svg" viewBox="0 0 120 120"><circle class="circle-bg" cx="60" cy="60" r="50"/><circle class="circle-fill" cx="60" cy="60" r="50" data-pct="70"/></svg>
+                    <div class="circle-label"><span class="circle-pct">0%</span><span class="circle-lang">Dart</span></div>
+                </div></div>
+
+                <div class="lang-circle-item"><div class="circle-wrap">
+                    <svg class="circle-svg" viewBox="0 0 120 120"><circle class="circle-bg" cx="60" cy="60" r="50"/><circle class="circle-fill" cx="60" cy="60" r="50" data-pct="68"/></svg>
+                    <div class="circle-label"><span class="circle-pct">0%</span><span class="circle-lang">Node.js</span></div>
+                </div></div>
+            </div>
+
+            <!-- Skill boxes -->
+            <div class="skill-boxes reveal-up" style="--d:.2s">
+                <div class="skill-box">
+                    <div class="skill-box-icon"><i class="fas fa-database"></i></div>
+                    <h4>Databases &amp; Storage</h4>
+                    <div class="skill-items">
+                        <div class="skill-item">MySQL</div>
+                        <div class="skill-item">MongoDB</div>
+                        <div class="skill-item">Cloudinary</div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-box-icon"><i class="fas fa-tools"></i></div>
+                    <h4>Tools &amp; Platforms</h4>
+                    <div class="skill-items">
+                        <div class="skill-item">Git</div>
+                        <div class="skill-item">GitHub</div>
+                        <div class="skill-item">Figma</div>
+                        <div class="skill-item">VS Code</div>
+                        <div class="skill-item">IntelliJ</div>
+                        <div class="skill-item">PyCharm</div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-box-icon"><i class="fas fa-desktop"></i></div>
+                    <h4>Operating Systems</h4>
+                    <div class="skill-items">
+                        <div class="skill-item">Windows</div>
+                        <div class="skill-item">Linux</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── Projects ─── -->
+        <section id="projects" class="projects">
+            <div class="section-title reveal">
+                <h2>Featured <span class="gradient-text">Projects</span></h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Govi Sahaya -->
+                <div class="project-card glass reveal-up">
+                    <div class="project-header">
+                        <div class="project-number">01</div>
+                        <div class="project-meta-tags">
+                            <span class="proj-year-tag">2026</span>
+                            <span class="proj-cat-tag">Mobile</span>
+                        </div>
+                    </div>
+                    <div class="project-img">
+                        <img src="assets/project_govisahaya.png" alt="Govi Sahaya" onerror="this.style.display='none';this.parentElement.classList.add('no-img')">
+                        <div class="project-img-placeholder"><i class="fas fa-mobile-alt"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3>Govi Sahaya Mobile App</h3>
+                        <p>AI-powered agricultural platform enabling farmers with crop disease detection, financial planning, community forums, and real-time agricultural news.</p>
+                        <div class="proj-tech-tags">
+                            <span>Flutter</span><span>NodeJS</span><span>MongoDB</span><span>Python</span><span>Cloudinary</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/ishani-perera" target="_blank" class="project-github-link">
+                        <i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+
+
+                <!-- My Planner -->
+                <div class="project-card glass reveal-up" style="--d:.16s">
+                    <div class="project-header">
+                        <div class="project-number">02</div>
+                        <div class="project-meta-tags">
+                            <span class="proj-year-tag">2025</span>
+                            <span class="proj-cat-tag">Web</span>
+                        </div>
+                    </div>
+                    <div class="project-img">
+                        <img src="assets/project_myplanner.png" alt="My Planner" onerror="this.style.display='none';this.parentElement.classList.add('no-img')">
+                        <div class="project-img-placeholder"><i class="fas fa-tasks"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3>My Planner – Productivity App</h3>
+                        <p>Four-module suite: To-Do list with priorities, Habit Tracker with streaks, Academic Planner, and Weekly Scheduler with real-time clock and progress bars.</p>
+                        <div class="proj-tech-tags">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/ishani-perera" target="_blank" class="project-github-link">
+                        <i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Health Website -->
+                <div class="project-card glass reveal-up" style="--d:.24s">
+                    <div class="project-header">
+                        <div class="project-number">03</div>
+                        <div class="project-meta-tags">
+                            <span class="proj-year-tag">2025</span>
+                            <span class="proj-cat-tag">Web</span>
+                        </div>
+                    </div>
+                    <div class="project-img">
+                        <img src="assets/project_healthsite.png" alt="Health Website" onerror="this.style.display='none';this.parentElement.classList.add('no-img')">
+                        <div class="project-img-placeholder"><i class="fas fa-heartbeat"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3>Health &amp; Well-being Website</h3>
+                        <p>Multi-page site built around UN SDG 3, covering mental health, nutrition &amp; community health sections with client-side form validation and responsive design.</p>
+                        <div class="proj-tech-tags">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/ishani-perera" target="_blank" class="project-github-link">
+                        <i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Student Management -->
+                <div class="project-card glass reveal-up" style="--d:.32s">
+                    <div class="project-header">
+                        <div class="project-number">04</div>
+                        <div class="project-meta-tags">
+                            <span class="proj-year-tag">2025</span>
+                            <span class="proj-cat-tag">Java</span>
+                        </div>
+                    </div>
+                    <div class="project-img">
+                        <img src="assets/project2.png" alt="Student Management System" onerror="this.style.display='none';this.parentElement.classList.add('no-img')">
+                        <div class="project-img-placeholder"><i class="fas fa-graduation-cap"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <h3>Student Management System</h3>
+                        <p>High-performance Java OOP console application with Encapsulation &amp; Inheritance, CSV persistence using BufferedReader/Writer, and advanced search algorithms.</p>
+                        <div class="proj-tech-tags">
+                            <span>Java</span><span>OOP</span><span>File I/O</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/ishani-perera" target="_blank" class="project-github-link">
+                        <i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ─── Contact ─── -->
+        <section id="contact" class="contact">
+            <div class="section-title reveal">
+                <h2>Get In <span class="gradient-text">Touch</span></h2>
+                <div class="line"></div>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info reveal-left">
+                    <h3>Let's Collaborate!</h3>
+                    <p>I'm currently open to internship opportunities and freelance projects. Whether you have a question or just want to say hi — my inbox is always open!</p>
+                    <div class="contact-methods">
+                        <a href="mailto:udayanganiishaniperera@gmail.com" class="method">
+                            <i class="fas fa-envelope"></i><span>udayanganiishaniperera@gmail.com</span>
+                        </a>
+                        <a href="tel:+94741024640" class="method">
+                            <i class="fas fa-phone-alt"></i><span>+94 74 102 4640</span>
+                        </a>
+                        <div class="method">
+                            <i class="fas fa-map-marker-alt"></i><span>77/A Nadagamuva, Kotugoda, Sri Lanka</span>
+                        </div>
+                        <a href="https://www.linkedin.com/in/ishaniperera" target="_blank" class="method">
+                            <i class="fab fa-linkedin-in"></i><span>linkedin.com/in/ishaniperera</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form glass reveal-right" id="contactForm">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" placeholder="Jane Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="jane@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="Hello Ishani, I'd love to discuss..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <p class="form-success" id="formSuccess">✅ Message sent! I'll get back to you soon.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <p class="footer-logo">Ishani<span>.</span></p>
+            <p>&copy; 2026 Ishani Perera · Designed &amp; Built with ♥</p>
+            <div class="footer-socials">
+                <a href="https://github.com/ishani-perera" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ishaniperera" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" title="Back to top"><i class="fas fa-arrow-up"></i></button>
+    <script src="script.js"></script>
+</body>
+</html>
